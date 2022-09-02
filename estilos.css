@@ -1,31 +1,19 @@
-
-*{box-sizing: border-box;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 html{
     scroll-behavior: smooth;
+    background-color: #d1c0b2;
 }
 body{
-    font-family: calibri ;
-    margin: 0;
-}
-h1{
-    font-size: 3.5em;
-}
-h2{
-    font-size: 2.7em;
-}
-h3{
-    font-size: 2em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif 
 }
 p{
-    font-size: 1.25em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-ul{
-    list-style: none;
-}
-li{
-    font-size: 1.5em;
-}
+
 button{
     font-size: 1.5em;
     font-weight: bold;
@@ -34,24 +22,28 @@ button{
     border: 2px solid rgba(0, 0, 0, 0.5);
     box-shadow: 2px 1.5px 10px rgba(0, 0, 0, 0.5);
     color: white;
-    background-color: darkviolet;
+    background-color: #132d32;
 }
 button:hover{
-    background-color: rgb(79, 1, 112);
+    background-color: #314959;
 }
 .container{
     max-width: 1400px;
     margin: auto;
+    padding: 20px 0;
+    overflow: hidden;
 }
 header{
-    background-color: aliceblue;
+    background-color: #d1c0b2;
 }
 header .logo{
     font-size: 1.6em;
     margin: 0;
-    padding: 25px 30px;
+    padding: 20px 30px;
     font-weight: bold;
-    color: darkviolet;
+    color: #e6ded0;
+    background-color: #664c55;
+    border-radius: 25px
 }
 header .container{
     display: flex;
@@ -62,6 +54,7 @@ header .nav{
     display: flex;
     flex-direction: column;
     text-align: center;
+    padding: 10px;
     padding-bottom: 25px;
 }
 
@@ -70,6 +63,12 @@ header a{
     text-decoration: none;
     font-weight: bold;
     color: black;
+}
+header a:hover{
+    text-decoration: underline;
+}
+#intro h1{
+    font-size: 4em;
 }
 #intro{
     display: flex;
@@ -88,72 +87,297 @@ header a{
     
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    border-radius: 10px;
 }
-
-#gustos h2{
-    font-size: 3em;
-    margin: 0;
-    padding: 25px 30px;
-    font-weight: bold;
-    color: darkviolet;
-}
-#gustos p{
-    font-size: 1.5em;
-    margin: 0;
-    padding: 25px 30px;
-    font-weight: bold;
+#intro a{
     color: black;
+    text-decoration: none;
+}
+/*seccion gustos*/
+#gustos{
+    height: 60vh;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-#consejos h2{
+.img-container{
+    display: flex;
+}
+.contenido-texto{
+    text-align: center;
+    padding: 20px 20px;
+}
+.contenido-texto h2{
+    font-size: 2em;
+    text-align: center;
+    color: white;
+}
+.contenido-texto p{
+    font-size: 1.5em;
+    text-align: justify;
+    pading: 10px;
+}
+/*seccion descriction*/
+#description h2{
     margin-top: 0;
     padding: 25px 30px;
     font-weight: bold;
-    color: darkviolet;
+    color: white;
+}
+.card p{
+    text-align: justify;
 }
 
-#consejos{
+
+#description{
     background-color: rgb(27, 26, 26);
     text-align: center;
-    height: 70vh;
     margin: auto;
 }
-#consejos.container{
-    text-align: center;
-    padding: 100px 12px;
+.container-card{
+    justify-content: space-evenly;
+    background-size: cover;
+    align-items: center;
+    padding: 0 10px;
 }
-
-#consejos p{
-    display: none;
-    
-}
-
-
 .card:first-child{
-    background-image:linear-gradient(
-        0deg, 
-        rgba(0,0,0,0.5), 
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("imagenes/muñeco2.jpg");
+    padding: 70px;
+    border-radius: 10%;
+}
+.card:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
     ,url("imagenes/flaco.jpg");
-    border-radius: 10px;
+    margin-top: 10px;
+    padding: 70px;
+    border-radius: 10%;
 }
-.card:nth-child(2){
-    background-image:linear-gradient(
-        0deg, 
-        rgba(0,0,0,0.5), 
-        rgba(0,0,0,0.5)
-    )
-    ,url("imagenes/muñeco.jpg");
-    border-radius: 10px;
+/*seccion personal*/
+
+#personal{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.card:nth-child(3){
-    background-image:linear-gradient(
-        0deg, 
-        rgba(0,0,0,0.5), 
-        rgba(0,0,0,0.5)
-    )
-    ,url("imagenes/ambos.jpg");
+#personal h2{
+    text-align:center;
+}
+.comida{
+    padding-top: 10px;
+    padding: 10px;
+}
+.pasatiempo{
+    padding-top: 10px;
+    padding: 10px;
+}
+.descanso{
+    padding-top: 10px;
+    padding: 10px;
+}
+.container-personal-three{
+    display: none;
+}
+.container-personal-two{
+    display: none;
+}
+.container-personal-one{
+    display: none;
+}
+.texto-personal{
+    background: rgb(27, 26, 26);
     border-radius: 10px;
+    text-align: justify;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+    align-items: center;
+    display: flex;
+}
+.texto-personal h3{
+    text-align: left;
+    width: 40%;
+    background-color: #4c4754;
+    border-radius: 10px;
+    color: white;
+}
+.texto-personal p{
+    width: 55%;
+    color: white;
 }
 
+/*seccion footer*/
+
+.container-footer{
+    background: rgb(27, 26, 26);
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+.contenido-foot{
+    margin-top: 15px;
+    text-align: center;
+    background-color: white; 
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+}
+.container-footer a{
+    color: black;
+    text-decoration: none;
+}
+/*seccion cambios escritorio*/
+@media (min-width: 850px){
+    #gustos {
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+    #gustos .container-img{
+        background-image: url("imagenes/yo.jpg");
+        background-size: cover;
+        height: 400px;
+        width: 400px; 
+        border-radius: 100%;
+        flex-direction: column;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+        cursor: default;
+        transition: all 400ms ease;
+    }
+    #gustos .container-img:hover{
+        box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.9);
+    }
+    #gustos .contenido-texto{
+        max-width: 600px;
+        text-align: justify;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #description{
+        background-color: rgb(27, 26, 26);
+        text-align: center;
+        margin: auto;
+    }
+    .container-card{
+    display: flex;
+    justify-content: space-evenly;
+    }
+    .container-card .card{
+        justify-content: space-evenly;
+        display: flex;
+        align-items: center;
+        background: white;
+        overflow: hidden;
+        transition: all 400ms ease;
+        width: 45%;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+        cursor: default;
+    }
+    .card:hover{
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.9);
+        transform: translateY(-2%);
+    }
+
+    .imagen-flaco{
+        background-image: url("imagenes/flaco2.jpg");
+        background-size: cover;
+        height: 150px;
+        width: 150px; 
+        border-radius: 100%;
+        flex-direction: column;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+        object-fit: cover;
+    }
+    .imagen-muñeco{
+        background-image: url("imagenes/muñeco2.jpg");
+        background-size: cover;
+        height: 150px;
+        width: 150px; 
+        border-radius: 100%;
+        flex-direction: column;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+        object-fit: cover;
+    }
+    .contenido-texto-card{
+        width: 60%;
+    }
+    .container-personal-three{
+        display: flex;
+    }
+    .container-personal-two{
+        display: flex;
+    }
+    .container-personal-one{
+        display: flex;
+    }
+    #personal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding-top: 10px;
+        height: 80vh;
+    }
+    .container-personal{
+        display: flex;
+        max-width: 990px;
+        height: 60vh;
+    }
+    #personal h2{
+        display: none;
+    }
+    #personal h3{
+        display: none;
+    }
+    .container-personal{
+        padding: 10px;
+    }
+    .texto-personal p{
+        width: 95%;
+        color: white;
+        font-size: 25px;
+    }
+    .texto-personal{
+        background: none;
+        border-radius: none;
+        box-shadow: none;
+    }
+    .comida{
+        background-color: #524c6c;
+    }
+    .pasatiempo{
+        background-color: #968790;
+    }
+    .descanso{
+        background-color: #becfd0;
+    }
+    .columna{
+        color: white;
+        padding: 2rem;
+        width: 40%;
+        overflow: hidden;
+        transition: width .3s ease-in-out;
+        cursor: pointer;
+    }
+    .columna.activa{
+        width: 60%;
+    }
+    .columna:first-of-type{
+        border-radius: 1rem 0 0 1rem;
+    }
+    .columna:last-of-type{
+        border-radius: 0 1rem 1rem 0;
+    }
+    .container-footer{
+        display: flex;
+    }
+}

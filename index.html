@@ -5,71 +5,125 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MAASCOTILLAS</title>
-    <link rel="stylesheet" href="palet.css">
+    <Script defer src="app.js"> </Script>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
             <p class="logo"> MAASCOTITAS</p>
             <nav>
-                <a href="#gustos"> GUSTOS</a>
-                <a href="#consejos"> CONSEJOS</a>
-                <a href="#disgustos"> DISGUSTOS</a>
+                <a href="#gustos"> INTRO</a>
+                <a href="#personal"> PERSONAL</a>
+                <a href="#footer"> CONTACTO</a>
             </nav>
-        </div>
     </header>
     <section id="intro">
         <h1>MUÑECO <br> Y <br> FLACO</h1>
-        <button>DESCRIPCION</button>
-    </section>
-    <section id="gustos">
-        <div class="container">
-        <div class="img-container">
-            <h2>GUSTOS PERRUNOS</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur debitis reprehenderit exercitationem repellat ad tempore fugit quia ut vero dicta sint, tenetur nisi iste ex placeat omnis obcaecati fugiat ipsa.
-            </p>
-        </div>
-    </div>
+        <button>
+            <a href="#description"> DESCRIPCION</a>
+        </button>
     </section>
 
-    <section id="consejos">
+    <section id="gustos">  
+        <div class="img-container">
+            <div class="container-img">
+                <h2></h2>
+            </div>
+            <div class="contenido-texto">
+                <h2> INTRODUCCIÓN</h2>
+                <p>
+                    bienvenido, mi nombre es adrian jimenez, desarrollador de este sitio el cual esta destinado a dar a conocer a mis mascotas, son hermanos y tienen un poco mas de un año.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="description">
         <div class="container">
-        <h2>CONSEJOS</h2>
-            <div class="container-consejos">
+        <h2>DESCRIPCION</h2>
+            <div class="container-card">
                 <div class="card">
-                    <h3>CONSEJO 🐶</h3>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem inventore id necessitatibus quos, ullam perspiciatis veritatis laudantium incidunt quod reiciendis veniam odio explicabo deleniti nostrum porro quis voluptatum. Maiores, placeat.</p>
-                    <button> MORE INF</button>
+                    <div class="imagen-muñeco">
+                        <h1></h1>
+                    </div>
+                    <div class="contenido-texto-card">
+                        <h3>MUÑECO</h3>
+                        <p>Muñeco es el perro de color cafe, por alguna razón es mas alto que su hermano, es el que tiene mas energía tiene, sus emociones son muy intensas ya que cuando se pone feliz se hace pipi.
+                        </p>
+                    </div>
                 </div>
                 <div class="card">
-                    <h3>CONSEJO 🐶</h3>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem inventore id necessitatibus quos, ullam perspiciatis veritatis laudantium incidunt quod reiciendis veniam odio explicabo deleniti nostrum porro quis voluptatum. Maiores, placeat.</p>
-                    <button> MORE INF</button>
-                </div>
-                <div class="card">
-                    <h3>CONSEJO 🐶</h3>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem inventore id necessitatibus quos, ullam perspiciatis veritatis laudantium incidunt quod reiciendis veniam odio explicabo deleniti nostrum porro quis voluptatum. Maiores, placeat.</p>
-                    <button> MORE INF</button>
+                    <div class="imagen-flaco">
+                        <h1></h1>
+                    </div>
+                    <div class="contenido-texto-card">
+                        <h3>FLACO</h3>
+                        <p>Flaco es el perro color blanco, es muy tranquilo y siempre quiere estar abrazado o cobijado, le da miedo escuchar sonar el telefono y ver personas nuevas, generalmente esta acostado siempre.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="disgustos">
-        <ul>
-            <li>😠 LAS MANOS ABIERTAS</li>
-            <li>😠 OLOR A CEBOLLA</li>
-            <li>😠 QUE LES INTERRUMPAN EL SUEÑO</li>
-            <li>😠 QUE LES HABLEN EN VOZ ALTA</li>
-            <li>😠 SONIDOS DE RADIO</li>
-        </ul>
+    <section id="personal">
+        <div class="container-personal">
+            <h2>DATOS PERSONALES</h2>
+            <div class="columna comida">
+                <div class="container-personal-one">
+                    <img src="imagenes/croqueta.png" height="100px" alt="">
+                </div>
+                <div class="texto-personal">
+                <h3 class="comida">COMIDA</h3>
+                <p>
+                    usualmente comen croquetas aun que a veces se roban algun pan o les damos carne.
+                </p>
+                </div>
+            </div>
+            <div class="columna pasatiempo activa">
+                <div class="container-personal-two">
+                    <img src="imagenes/pelota.png" height="100px" alt="">
+                </div>
+                <div class="texto-personal">
+                <h3 class="pasatiempo">PASATIEMPO</h3>
+                <p>
+                    tienen sus peluches con los cuales se acompañan y muerden para jugar pero siempre estan corriendo y haciendo travesuras.                    
+                </p>
+                </div>
+            </div>
+            <div class="columna descanso">
+                <div class="container-personal-three">
+                    <img src="imagenes/cama.png" height="100px" alt="">
+                </div>
+                <div class="texto-personal">
+                <h3 class="descanso">DESCANSO</h3>
+                <p>
+                    aun que tienen su espacio para dormir en la sala ellos duermen en mi cama por que les da miedo estar solos tanto tiempo, generalmente me despiertan para que los deje ir al baño.                    
+                </p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <div class="container">
-        <p>&copy; <small>
-            <a href="https://www.facebook.com/profile.php?id=100010721406043" target="_blank" rel=" nooponer noreferrer">  Adrian Jimenez 2022</a> 
-        </small></p>
+    <footer id="footer">
+        <div class="container-footer">
+            <div class="contenido-foot">
+                <h3>Phone</h3>
+                <p>351-182-9205</p>
+                </div>
+                <div class="contenido-foot">
+                    <h3>Email</h3>
+                    <p>adrianjimenez7u7xd@gmail.com</p>
+                </div>
+                <div class="contenido-foot">
+                <h3>AUTOR</h3>
+                <p>
+                <a href="https://github.com/AdrianJimenez7u7" target="_blank" rel=" nooponer noreferrer">  Adrian Jimenez</a> 
+            </small></p>
+            </div>
         </div>
     </footer>
 </body>
